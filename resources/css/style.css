@@ -18,11 +18,13 @@ html, body {
 
 /*Main Section Styles*/
 main {
+  display: block;
   width: 100%;
   height: 31rem;
   background-image: url(../pics/glasses-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
   /*Main >> Header Section << styles*/
 header {
@@ -39,8 +41,11 @@ header nav span {
   margin-right: 2rem;
 }
 
+header .menu {
+  display: none;
+}
+
 .header-left {
-  display: inline-flex;
   align-items: center;
   flex-grow: 1;
 }
@@ -60,6 +65,7 @@ header .logo {
   text-align: center;
   float: right;
   margin-right: -2rem;
+  align-items: center;
 }
 
 .banner h1 {
@@ -104,9 +110,6 @@ header .logo {
 }
 
 /*Narrative Styles*/
-.narrative {
-
-}
 .narrative h3 {
   height: 2rem;
   width: 10rem;
@@ -126,11 +129,11 @@ header .logo {
 }
 
 .philosophy {
-  margin-left: 5.9rem;
+  margin-left: 12.5%;
 }
 
 .appointments {
-  margin-left: 5rem;
+  margin-left: 5%;
 }
 
 /*Fotter Styles*/
@@ -144,4 +147,135 @@ footer .logo {
   height: 1.5rem;
   margin-left: 4rem;
   margin-right: 1rem;
+}
+
+/*Media Query Styles*/
+
+/*Tablet Styles*/
+@media only screen and (max-width: 1024px) {
+  /*Universal Styles*/
+  .site-container {
+    width: 100%;
+  }
+
+  /* >> Main Styles << */
+  main {
+    height: 22rem;
+    background-size: 160%;
+  }
+
+  /* >> Header Styles << */
+  header {
+    position: relative;
+    top: 0;
+  }
+
+  /* >> Banner Styles << */
+  .banner {
+    position: relative;
+    top: 5rem;
+    height: 5.2rem;
+    width: 23.9rem;
+    margin-right: 2rem;
+  }
+
+  .banner h1 {
+    font-size: 1.33rem;
+    margin: 0.75rem 4rem;
+  }
+}
+
+/*Smart Phone Styles*/
+@media only screen and (max-width: 650px) {
+  /* >> Universal Styles <<*/
+  .site-container {
+    width: 100%;
+  }
+
+  /* >> Main Styles <<*/
+  main {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  /* >> Header Styles << */
+  header nav span {
+    display: none;
+  }
+
+  header nav .menu {
+    display: block;
+  }
+
+  .header-left span {
+    display: none;
+  }
+
+  /* >> Banner Styles << */
+  .banner {
+    position: relative;
+    top: 9rem;
+    height: 3rem;
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .banner h1 {
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* >> Gallery Styles << */
+  .gallery {
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .truck-icon {
+    height: 5rem;
+  }
+
+  .ruler-icon {
+    margin: 1.54rem 0;
+    height: 6rem;
+  }
+
+  .gallery span {
+    font-size: 0.77rem;
+  }
+
+  /* >> Narrative Styles << */
+  .narrative {
+    flex-direction: column;
+  }
+
+  .philosophy,
+  .appointments {
+    margin-left: 0;
+    margin-bottom: 4rem;
+  }
+
+  .narrative h3 {
+    width: 100%;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  .narrative p {
+    font-size: 0.77rem;
+    padding: 0 0.75rem;
+  }
+
+  /* >> Footer Styles << */
+  footer span {
+    display: none;
+  }
+
+  footer .logo {
+    margin: 0 auto;
+  }
 }
