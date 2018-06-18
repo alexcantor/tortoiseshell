@@ -186,7 +186,7 @@ footer .logo {
 }
 
 /*Smart Phone Styles*/
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 470px) {
   /* >> Universal Styles <<*/
   .site-container {
     width: 100%;
@@ -196,6 +196,7 @@ footer .logo {
   main {
     height: 17rem;
     background-position: 20%;
+    background-size: cover;
   }
 
   /* >> Header Styles << */
@@ -217,7 +218,6 @@ footer .logo {
     top: 9rem;
     height: 3rem;
     width: 100%;
-    float: right;
     margin-right: 0;
     justify-content: center;
   }
