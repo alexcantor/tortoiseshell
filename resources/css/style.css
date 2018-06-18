@@ -186,7 +186,7 @@ footer .logo {
 }
 
 /*Smart Phone Styles*/
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 650px) {
   /* >> Universal Styles <<*/
   .site-container {
     width: 100%;
